@@ -7,6 +7,10 @@
   font-family: "Space Grotesk", serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .todo-container {
   align-items: center;
   display: flex;
