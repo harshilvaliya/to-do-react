@@ -11,6 +11,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+::selection {
+  background: #fff;
+  color: #2bbc8a;
+}
+
 .todo-container {
   align-items: center;
   display: flex;
@@ -74,14 +79,14 @@ form button {
 
 .todo-item {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto;
   gap: 1rem;
   padding: 1.25rem;
   margin: 0.75rem 0;
   background: #111;
   border: 1px solid #333;
   border-radius: 0.5rem;
-  width: 280px;
+  width: 325px;
 }
 
 .todo-item span {
@@ -90,12 +95,17 @@ form button {
   line-height: 1.5;
 }
 
+.edit-btn,
 .check-btn,
 .delete-btn {
   background: transparent;
   color: #888;
   border: none;
   cursor: pointer;
+}
+
+.edit-btn:hover {
+  color: #2b89bc;
 }
 
 .check-btn:hover {

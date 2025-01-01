@@ -7,6 +7,7 @@ This is a simple To Do application built with React. The purpose of this project
 - Add new tasks
 - View a list of tasks
 - Save task on local storage
+- Edit tasks
 - Delete tasks
 
 ## Technologies Used

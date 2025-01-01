@@ -1,13 +1,9 @@
-import { useState } from "react";
-
-export const TodoForm = ({ onAddTodo }) => {
-  const [inputValue, setInputValue] = useState({});
-
+export const TodoForm = ({ onAddTodo, inputValue, setInputValue }) => {
   const handleInputChange = (value) => {
     setInputValue({ id: value, content: value, checked: false });
   };
 
-  const handleFormSubmbit = (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
     onAddTodo(inputValue);
     setInputValue({ id: "", content: "", checked: false });
@@ -15,7 +11,7 @@ export const TodoForm = ({ onAddTodo }) => {
 
   return (
     <section className="form">
-      <form onSubmit={handleFormSubmbit}>
+      <form onSubmit={handleFormSubmit}>
         <div>
           <input
             type="text"
